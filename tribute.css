@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Убираем центрирование для всего текста */
+    text-align: left;
+}
+
+/* Центрируем только заголовки и футер */
+h1,
+h2,
+h3,
+.footer {
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    /* Чтобы список был под заголовком Quick Facts */
+    display: inline-block;
+    text-align: left;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
