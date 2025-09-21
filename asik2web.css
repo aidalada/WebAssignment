@@ -7,15 +7,12 @@
 html,
 body {
     height: 100%;
-    /* растягиваем страницу на всю высоту */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    /* расположение сверху вниз */
     min-height: 100vh;
-    /* чтобы футер был внизу даже при маленьком контенте */
 }
 
 .header {
@@ -41,7 +38,6 @@ body {
     margin-top: 15px;
     margin-left: 10px;
     flex: 1;
-    /* растягиваем основной блок, чтобы футер прижимался вниз */
 }
 
 .sidebar {
@@ -78,4 +74,5 @@ button {
 h2 {
     margin: 0;
     color: rgb(255, 255, 255);
+
 }
