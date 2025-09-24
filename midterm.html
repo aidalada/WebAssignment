@@ -1,94 +1,91 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Platform - Главная</title>
-    <!-- Подключаем файл со стилями -->
-    <link rel="stylesheet" href="styles/midterm.css">
-    <!-- Подключаем шрифты от Google Fonts для красивого вида -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>My Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+        
+        .header {
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+
+        .event-card {
+            border: 1px solid gray;
+            margin: 15px; 
+            padding: 10px;
+        }
+
+        .event-card img {
+            max-width: 100%; 
+        }
+        
+        .footer {
+            border-top: 1px solid black;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="midterm.html" class="logo">Eventify</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#" class="active">Главная</a></li>
-                    <li><a href="#">События</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
+    <div class="header">
+        <h1>Eventify</h1>
+        <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Find the coolest events in ur city</h1>
+        <p>Concerts, master classes, webinars and much more await you!</p>
+        <a href="#">Watch events</a>
+    </div>
+
+    <div>
+        <h2>Upcoming events</h2>
+
+        <div class="event-card">
+            <img src="https://placehold.co/600x400/83c5be/white?text=Концерт" alt="img">
+            <h3>Music event: Jazz & Blues</h3>
+            <p>25 sep 2025 | 19:00</p>
+            <p>Astana, Hall "Мир"</p>
+            <a href="#">Registration</a>
         </div>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Найдите лучшие события в вашем городе</h1>
-                <p>Концерты, мастер-классы, вебинары и многое другое ждут вас!</p>
-                <a href="#" class="btn-primary">Смотреть события</a>
-            </div>
-        </section>
-
-        <section class="events-section">
-            <div class="container">
-                <h2>Предстоящие события</h2>
-                <div class="events-grid">
-                    <!-- Карточка события 1 -->
-                    <div class="event-card">
-                        <img src="https://placehold.co/600x400/83c5be/white?text=Концерт" alt="Обложка события">
-                        <div class="card-content">
-                            <h3>Музыкальный вечер: Jazz & Blues</h3>
-                            <p class="event-info">25 сентября 2025 | 19:00</p>
-                            <p class="event-location">Астана, Концертный зал "Мир"</p>
-                            <a href="#" class="btn-secondary">Зарегистрироваться</a>
-                        </div>
-                    </div>
-                    <!-- Карточка события 2 -->
-                    <div class="event-card">
-                        <img src="https://placehold.co/600x400/006d77/white?text=Мастер-класс" alt="Обложка события">
-                        <div class="card-content">
-                            <h3>Мастер-класс по цифровой фотографии</h3>
-                            <p class="event-info">02 октября 2025 | 11:00</p>
-                            <p class="event-location">Онлайн-трансляция</p>
-                            <a href="#" class="btn-secondary">Зарегистрироваться</a>
-                        </div>
-                    </div>
-                    <!-- Карточка события 3 -->
-                    <div class="event-card">
-                        <img src="https://placehold.co/600x400/124559/white?text=Вебинар" alt="Обложка события">
-                        <div class="card-content">
-                            <h3>Вебинар: "Основы инвестирования"</h3>
-                            <p class="event-info">10 октября 2025 | 18:30</p>
-                            <p class="event-location">Онлайн-трансляция</p>
-                            <a href="#" class="btn-secondary">Зарегистрироваться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Eventify Platform. Все права защищены.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Telegram</a>
-            </div>
+        <div class="event-card">
+            <img src="https://placehold.co/600x400/006d77/white?text=Мастер-класс" alt="img">
+            <h3>МMasterclass in digital photography</h3>
+            <p>02 oct 2025 | 11:00</p>
+            <p>Live</p>
+            <a href="#">Registration</a>
         </div>
-    </footer>
+        
+        <div class="event-card">
+            <img src="https://placehold.co/600x400/124559/white?text=Вебинар" alt="img">
+            <h3>ВWebinar: "Investing Basics""</h3>
+            <p>10 oct 2025 | 18:30</p>
+            <p>Live</p>
+            <a href="#">Registration</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Eventify Platform.</p>
+    </div>
 
 </body>
-
 </html>
